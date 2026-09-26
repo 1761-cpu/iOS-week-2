@@ -1,8 +1,8 @@
 import Foundation
 
 struct Computer: Identifiable {
-    let id = UUID()          // Unique ID
-    var name: String         // e.g., "PC01"
-    var location: String     // e.g., "Lab A"
+    let id = UUID()
+    var name: String
+    var location: String   
     var isAvailable: Bool
 }

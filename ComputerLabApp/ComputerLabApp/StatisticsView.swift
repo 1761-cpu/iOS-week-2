@@ -3,9 +3,7 @@ import SwiftUI
 struct StatisticsView: View {
     let computers: [Computer]
     
-    var totalCount: Int {
-        computers.count
-    }
+    var totalCount: Int {computers.count}
     
     var body: some View {
         VStack(spacing: 20) {

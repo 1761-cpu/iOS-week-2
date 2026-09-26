@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationStack {
             VStack(spacing: 16) {
 
-                // Header
+                // HEADER
                 VStack(spacing: 8) {
                     Image(systemName: "desktopcomputer")
                         .font(.system(size: 48))
@@ -41,7 +41,7 @@ struct ContentView: View {
                 .padding(.horizontal)
                 .padding(.top, 10)
 
-                // List
+                // LIST
                 List(computers) { computer in
                     HStack {
                         Image(systemName: "desktopcomputer")
@@ -83,7 +83,7 @@ struct ContentView: View {
                 .scrollContentBackground(.hidden)
                 .padding(.horizontal)
 
-                // Buttons
+                // BUTTONS
                 HStack(spacing: 12) {
                     NavigationLink {
                         AddComputerView(computers: $computers)
@@ -100,7 +100,7 @@ struct ContentView: View {
                     }
 
                     NavigationLink {
-                        CheckComputerView(computers: $computers)
+                        CheckComputerView(computers: computers)
                     } label: {
                         VStack {
                             Image(systemName: "magnifyingglass")

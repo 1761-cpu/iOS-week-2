@@ -4,7 +4,7 @@ struct AddComputerView: View {
     @Environment(\.dismiss) var dismiss
     @Binding var computers: [Computer]
     @State private var computerName: String = ""
-    @State private var location: String = "Lab A"
+    @State private var location: String = ""
     @State private var isAvailable: Bool = true
 
     var body: some View {
@@ -47,8 +47,6 @@ struct AddComputerView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
-            .buttonStyle(.borderless)
-            
             Spacer()
         }
         .padding()

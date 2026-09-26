@@ -1,12 +1,9 @@
 import SwiftUI
 
 struct CheckComputerView: View {
-    @Binding var computers: [Computer]
-    
+    let computers: [Computer]
     @State private var searchName: String = ""
-    
     @State private var isFound: Bool = false
-    
     @State private var showResult: Bool = false
 
     var body: some View {
@@ -52,7 +49,6 @@ struct CheckComputerView: View {
                 .cornerRadius(10)
                 .padding(.horizontal)
             }
-            
             Spacer()
         }
         .padding(.top, 40)
